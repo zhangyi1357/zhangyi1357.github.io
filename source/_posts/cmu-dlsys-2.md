@@ -1,8 +1,10 @@
 ---
 title: CMU DLSys 课程笔记 2 - ML Refresher / Softmax Regression
 date: 2024-07-13 18:35:22
+url-name: cmu-dlsys-2
+author: zhangyi
 tags: dlsys
-mathjax: true
+categories: dlsys
 ---
 
 [本节 Slides](https://dlsyscourse.org/slides/softmax_regression.pdf) | [本节课程视频](https://www.bilibili.com/video/BV1Rg4y137jH?p=3&vd_source=07d6eec55261917555a5d7fb4429cab9)

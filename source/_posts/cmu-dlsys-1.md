@@ -1,7 +1,11 @@
 ---
 title: CMU DLSys 课程笔记 1 - Introduction and Logistics
 date: 2024-07-13 16:14:21
+update: 2024-07-13 16:14:21
+url-name: cmu-dlsys-1
+author: zhangyi
 tags: dlsys
+categories: dlsys
 ---
 
 CMU Deep Learning System，教你如何实现一个深度学习系统。
