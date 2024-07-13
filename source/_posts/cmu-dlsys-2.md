@@ -1,7 +1,8 @@
 ---
 title: CMU DLSys 课程笔记 2 - ML Refresher / Softmax Regression
 date: 2024-07-13 18:35:22
-tags:
+tags: dlsys
+mathjax: true
 ---
 
 [本节 Slides](https://dlsyscourse.org/slides/softmax_regression.pdf) | [本节课程视频](https://www.bilibili.com/video/BV1Rg4y137jH?p=3&vd_source=07d6eec55261917555a5d7fb4429cab9)
@@ -41,7 +42,7 @@ tags:
 
 让我们考虑一个 k 类分类问题，其中我们有：
 
-- 训练数据：$x^{(i)} \in \R^n$, $y^{(i)} \in {1,\dots, k}$ for $i = 1, … , m$
+- 训练数据：$x^{(i)} \in \mathbb{R}^n$, $y^{(i)} \in {1,\dots, k}$ for $i = 1, … , m$
 - 其中 $n$ 为输入数据的维度，$m$ 为训练数据的数量，$k$ 为分类类别的数量
 - 针对 28x28 的 MNIST 数字进行分类，$n = 28 \cdot 28 = 784$, $k = 10$, $m = 60,000$
 
@@ -53,12 +54,12 @@ $$
 h_\theta(x) = \theta^T x
 $$
 
-其中 $\theta \in \R^{n\times k}$ 是我们的模型参数，$x \in \R^n$ 是输入数据。
+其中 $\theta \in \mathbb{R}^{n\times k}$ 是我们的模型参数，$x \in \mathbb{R}^n$ 是输入数据。
 
 机器学习中，经常使用的形式是多个输入叠加在一起的形式，即
 
 $$
-X \in \R^{m\times n}= \begin{bmatrix} {x^{(1)}}^T \\ \vdots \\ {x^{(m)}}^T \end{bmatrix}, \quad y = \begin{bmatrix} y^{(1)} \\ \vdots \\ y^{(m)} \end{bmatrix}
+X \in \mathbb{R}^{m\times n}= \begin{bmatrix} {x^{(1)}}^T \\ \vdots \\ {x^{(m)}}^T \end{bmatrix}, \quad y = \begin{bmatrix} y^{(1)} \\ \vdots \\ y^{(m)} \end{bmatrix}
 $$
 
 然后线性模型假设可以写为
@@ -100,7 +101,7 @@ $$
 \min_{\theta} \frac{1}{m} \sum_{i=1}^m \ell_{ce}(h_\theta(x^{(i)}), y^{(i)})
 $$
 
-我们使用梯度下降法来优化这个损失函数，针对函数$f:\R^{n\times k} \rightarrow \R$，其梯度为
+我们使用梯度下降法来优化这个损失函数，针对函数$f:\mathbb{R}^{n\times k} \rightarrow \mathbb{R}$，其梯度为
 
 $$
 \nabla_\theta f(\theta) = \begin{bmatrix} \frac{\partial f}{\partial \theta_{11}} & \dots & \frac{\partial f}{\partial \theta_{1k}} \\ \vdots & \ddots & \vdots \\ \frac{\partial f}{\partial \theta_{n1}} & \dots & \frac{\partial f}{\partial \theta_{nk}} \end{bmatrix}
@@ -126,7 +127,7 @@ $$
 \left.
 \begin{array}{l}
 \text { Repeat:} \\
-\text { \quad Sample a batch of data } X \in \R^{B\times n}, y \in \{1, \dots, k\}^B \\
+\text { \quad Sample a batch of data } X \in \mathbb{R}^{B\times n}, y \in \{1, \dots, k\}^B \\
 \text { \quad Update parameters } \theta \leftarrow \theta-\alpha \nabla_{\theta} \frac{1}{B} \sum_{i=1}^{B} \ell_{ce}\left(h_{\theta}\left(x^{(i)}\right), y^{(i)}\right)
 \end{array}
 \right.
@@ -164,7 +165,7 @@ $$
 \left.
 \begin{array}{l}
 \text { Repeat:} \\
-\text { \quad Sample a batch of data } X \in \R^{B\times n}, y \in \{1, \dots, k\}^B \\
+\text { \quad Sample a batch of data } X \in \mathbb{R}^{B\times n}, y \in \{1, \dots, k\}^B \\
 \text { \quad Update parameters } \theta \leftarrow \theta-\alpha X^T (\operatorname{softmax}(X\theta) - \mathbb{I}_y)
 \end{array}
 \right.
