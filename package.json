@@ -28,5 +28,8 @@
     "hexo-theme-next": "^8.20.0",
     "hexo-word-counter": "^0.2.0",
     "hexo-wordcount": "^6.0.1"
+  },
+  "devDependencies": {
+    "hexo-related-posts": "^1.5.2"
   }
 }

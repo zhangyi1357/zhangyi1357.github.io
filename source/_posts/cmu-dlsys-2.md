@@ -5,6 +5,7 @@ url-name: cmu-dlsys-2
 author: zhangyi
 tags: dlsys
 categories: dlsys
+description: CMU Deep Learning System，教你如何实现一个深度学习系统。本节课程是对机器学习内容的一个复习，以 Softmax Regression 为例讲解一个典型的有监督机器学习案例的整个流程以及其中的各种概念。预期读者应当对机器学习的基本概念有一定的了解。
 ---
 
 [本节 Slides](https://dlsyscourse.org/slides/softmax_regression.pdf) | [本节课程视频](https://www.bilibili.com/video/BV1Rg4y137jH?p=3&vd_source=07d6eec55261917555a5d7fb4429cab9)

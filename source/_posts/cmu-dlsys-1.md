@@ -6,6 +6,7 @@ url-name: cmu-dlsys-1
 author: zhangyi
 tags: dlsys
 categories: dlsys
+description: CMU Deep Learning System，教你如何实现一个深度学习系统。本节课程介绍了为什么要学习 deep learning 和 dlsys，dlsys 的组成部分，课程教师，学习目标和课程主题，课程前置条件，课程内容。
 ---
 
 CMU Deep Learning System，教你如何实现一个深度学习系统。
