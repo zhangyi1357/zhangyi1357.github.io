@@ -8,12 +8,12 @@ subtitle: ''
 description: 'Push Your Limits'
 keywords: C++
 author: 张怡
-language: en
+language: zh
 timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://zhangyi.github.io/project
+url: https://zhangyi1357.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
