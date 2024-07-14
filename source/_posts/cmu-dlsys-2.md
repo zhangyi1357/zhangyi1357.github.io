@@ -130,8 +130,8 @@ $$
 \left.
 \begin{array}{l}
 \text { Repeat:} \\
-\text { \quad Sample a batch of data } X \in \mathbb{R}^{B\times n}, y \in \{1, \dots, k\}^B \\
-\text { \quad Update parameters } \theta \leftarrow \theta-\alpha \nabla_{\theta} \frac{1}{B} \sum_{i=1}^{B} \ell_{ce}\left(h_{\theta}\left(x^{(i)}\right), y^{(i)}\right)
+\quad \text {  Sample a batch of data } X \in \mathbb{R}^{B\times n}, y \in \{1, \dots, k\}^B \\
+\quad \text {  Update parameters } \theta \leftarrow \theta-\alpha \nabla_{\theta} \frac{1}{B} \sum_{i=1}^{B} \ell_{ce}\left(h_{\theta}\left(x^{(i)}\right), y^{(i)}\right)
 \end{array}
 \right.
 $$
@@ -168,8 +168,8 @@ $$
 \left.
 \begin{array}{l}
 \text { Repeat:} \\
-\text { \quad Sample a batch of data } X \in \mathbb{R}^{B\times n}, y \in \{1, \dots, k\}^B \\
-\text { \quad Update parameters } \theta \leftarrow \theta-\alpha X^T (\operatorname{softmax}(X\theta) - \mathbb{I}_y)
+\quad \text {  Sample a batch of data } X \in \mathbb{R}^{B\times n}, y \in \{1, \dots, k\}^B \\
+\quad \text {  Update parameters } \theta \leftarrow \theta-\alpha X^T (\operatorname{softmax}(X\theta) - \mathbb{I}_y)
 \end{array}
 \right.
 $$
